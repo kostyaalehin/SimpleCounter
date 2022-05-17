@@ -8,13 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    private let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .white
-        return imageView
-    }()
     
     private let button: UIButton = {
         let button = UIButton()
@@ -23,6 +16,27 @@ class ViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
+    private let label: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    let colors: [UIColor] = [
+        .systemBlue,
+        .systemRed,
+        .systemCyan,
+        .systemFill,
+        .systemGray,
+        .systemMint,
+        .systemPink,
+        .systemBrown,
+        .systemGreen,
+        .systemYellow,
+        .systemOrange,
+        .systemPurple
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
