@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         return label
     }()
     
+    // add array with colors
     let colors: [UIColor] = [
         .systemBlue,
         .systemRed,
